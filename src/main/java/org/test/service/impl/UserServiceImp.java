@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * @author marshmello
  * @apiNote UserServiceImp类的继承UserService具体实现
- * @resoourse 注入mapper 调用mapper接口里声明的crud方法
+ * @resourse 注入mapper 调用mapper接口里声明的crud方法
  * @tips 1：配置文件 导入mybatis类库要与mybatis-spring版本匹配 2：@Transactional表示该类被Spring作为管理事务的类
  */
 

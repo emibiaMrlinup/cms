@@ -38,4 +38,7 @@
         <property name="basePackage" value="org.test.dao"/>
     </bean>
 
+    <!--<bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">-->
+    <!--<property name="dataSource" value="dataSource"/>-->
+    <!--</bean>-->
 </beans>
