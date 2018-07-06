@@ -62,8 +62,8 @@
       <file leaf-file-name="categoryList1.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/categoryList1.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="38" column="49" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
+            <state relative-caret-position="382">
+              <caret line="41" column="29" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -420,7 +420,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.26884422" />
-    <property name="settings.editor.selected.configurable" value="http.proxy" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -799,7 +799,7 @@
       <workItem from="1530613206445" duration="154000" />
       <workItem from="1530614095209" duration="49031000" />
       <workItem from="1530784171538" duration="17690000" />
-      <workItem from="1530839819061" duration="2470000" />
+      <workItem from="1530839819061" duration="2764000" />
     </task>
     <task id="LOCAL-00001" summary="ok">
       <created>1511580781296</created>
@@ -924,7 +924,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="422489000" />
+    <option name="totallyTimeSpent" value="422783000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -948,7 +948,7 @@
       <window_info id="Designer" order="2" />
       <window_info anchor="bottom" id="Regex" order="7" />
       <window_info anchor="bottom" id="Tail" order="7" />
-      <window_info anchor="right" id="Database" order="3" sideWeight="0.49787235" visible="true" weight="0.19677997" />
+      <window_info active="true" anchor="right" id="Database" order="3" sideWeight="0.49787235" visible="true" weight="0.19677997" />
       <window_info id="Structure" order="1" sideWeight="0.500821" side_tool="true" weight="0.20454545" />
       <window_info anchor="right" id="Translate" order="3" weight="0.20235935" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1405,8 +1405,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/categoryList1.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="38" column="49" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
+        <state relative-caret-position="382">
+          <caret line="41" column="29" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="29" />
         </state>
       </provider>
     </entry>
