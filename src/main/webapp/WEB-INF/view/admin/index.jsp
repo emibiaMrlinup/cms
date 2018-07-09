@@ -232,7 +232,7 @@
 
                 </li>
                 <li>
-                    <a href="${pageContext.request.contextPath}/queryCategorylist.do"
+                    <a href="${pageContext.request.contextPath}/queryCategorylist1.do"
                        class="active-menu waves-effect waves-dark"><i class="fa fa-qrcode"></i>
                         栏目</a>
 

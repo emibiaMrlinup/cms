@@ -1,5 +1,4 @@
-﻿
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+﻿<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <html>
 <head>
@@ -233,7 +232,8 @@
 
                 </li>
                 <li>
-                    <a href="${pageContext.request.contextPath}/queryCategorylist.do" class="active-menu waves-effect waves-dark"><i class="fa fa-qrcode"></i>
+                    <a href="${pageContext.request.contextPath}/queryCategorylist1.do"
+                       class="active-menu waves-effect waves-dark"><i class="fa fa-qrcode"></i>
                         栏目</a>
 
                 </li>

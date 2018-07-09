@@ -6,24 +6,30 @@
 <mapper namespace="org.test.dao.UserDao">
     <!-- 根据用户名和密码查询 -->
     <select id="findByUserNameAndPassword" parameterType="Map" resultType="User">
-        select * from user where username=#{username} and password=#{password}
+        select *
+        from user
+        where username = #{username} and password = #{password}
     </select>
 
     <select id="getEditors" resultType="User">
-        select * from user WHERE role = 'editor'
+        select *
+        from user
+        WHERE role = 'editor'
     </select>
 
     <select id="findById" parameterType="Int" resultType="User">
-        select * from user where id=#{id}
+        select *
+        from user
+        where id = #{id}
     </select>
     <update id="updateEditor" parameterType="User">
         update user
-        set username = #{username},password=#{password}
-        where id=#{id}
+        set username = #{username}, password = #{password}
+        where id = #{id}
     </update>
 
     <insert id="addEditor" parameterType="User">
-        insert into user (username, password, sex, role) values ( #{username} ,#{password}, #{sex},'editor')
+        insert into user (username, password, sex, role) values (#{username}, #{password}, #{sex}, 'editor')
     </insert>
     <delete id="delete">
         <!--数据库user表的id =#{实体类中的id属性}-->
