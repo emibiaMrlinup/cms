@@ -3,6 +3,7 @@ package org.test.ctrl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import org.test.entity.Category;
 import org.test.entity.CategoryVO;
@@ -32,4 +33,29 @@ public class CategoryCtrl {
         model.put("category", categories);
         return new ModelAndView("/admin/categoryList1", model);
     }
+    @RequestMapping("/Categorymanage.do")
+    public ModelAndView reqCategoryPage() {
+        Map<String,Object> model=new HashMap<String,Object>();
+        List<Category> categories=mCategoryService.getCategory();
+        model.put("category",categories);
+        return new ModelAndView("/admin/categoryManage",model);
+    }
+    @RequestMapping("/categoryUpdate.do")
+    public ModelAndView UpdateCategory(Category category){
+        boolean b = mCategoryService.updateCategorys(category);
+        Map<String,Object> model =new HashMap<String,Object>();
+        List<Category> categorys=mCategoryService.getCategory();
+        model.put("category",categorys);
+        return new ModelAndView("/admin/categoryList1",model);
+    }
+
+    @RequestMapping("/CategoryUpdateView.do")
+    public ModelAndView GetToUpdatepage(@RequestParam("id") int id){
+        Category category = mCategoryService.QueryById(id);
+        Map<String,Object> model = new HashMap<String,Object>();
+        model.put("category",category);
+        return  new ModelAndView("/admin/categoryUpdate",model);
+
+    }
+
 }

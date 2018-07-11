@@ -7,24 +7,12 @@
     <select id="getCategorys" resultType="Category">
         select * from category
     </select>
-
-
-    <!--<select id="findById" parameterType="Int" resultType="User">-->
-    <!--select * from user where id=#{id}-->
-    <!--</select>-->
-    <!--<update id="updateEditor" parameterType="User">-->
-    <!--update user-->
-    <!--set username = #{username},password=#{password}-->
-    <!--where id=#{id}-->
-    <!--</update>-->
-
-    <!--<insert id="addEditor" parameterType="User">-->
-    <!--insert into user (username, password, sex, role) values ( #{username} ,#{password}, #{sex},'editor')-->
-    <!--</insert>-->
-    <!--<delete id="delete">-->
-    <!--&lt;!&ndash;数据库user表的id =#{实体类中的id属性}&ndash;&gt;-->
-    <!--delete from user where id=#{id}-->
-    <!--</delete>-->
-
-
+    <update id="updateCategorys" parameterType="Category">
+        update category
+        set name=#{name}
+        where id=#{id}
+    </update>
+    <select id="findById" parameterType="Int" resultType="Category">
+        select * from category where id=#{id}
+    </select>
 </mapper>

@@ -14,6 +14,7 @@
         <!--breadcrumbs start -->
         <ul class="breadcrumb">
             <li><a href="${pageContext.request.contextPath}/"><i class="fa fa-home"></i>主页 </a></li>
+            <li><a href="${pageContext.request.contextPath}/Categorymanage.do"><i class="fa fa-home"></i>栏目管理 </a></li>
             <li class="active">栏目目录树形列表</li>
         </ul>
         <!--earning graph start-->

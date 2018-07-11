@@ -63,4 +63,23 @@ public class CategoryServiceImp implements CategoryService {
         }
         return null;
     }
+
+    public boolean updateCategorys(Category categorys) {
+        mCategoryDao.updateCategorys(categorys);
+        return true;
+    }
+    @Override
+    public boolean addCategorys(Category categorys) {
+        return false;
+    }
+    @Override
+    public boolean deleteCategorys(String id) {
+        return false;
+    }
+
+    @Override
+    public Category QueryById(int id) {
+        return mCategoryDao.findById(id);
+
+    }
 }

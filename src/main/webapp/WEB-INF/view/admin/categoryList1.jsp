@@ -19,6 +19,7 @@
         <!--breadcrumbs start -->
         <ul class="breadcrumb">
             <li><a href="${pageContext.request.contextPath}/"><i class="fa fa-home"></i>主页 </a></li>
+            <li><a href="${pageContext.request.contextPath}/Categorymanage.do"><i class="fa fa-home"></i>栏目管理 </a></li>
             <li class="active">栏目目录树形列表</li>
         </ul>
         <!--earning graph start-->
@@ -31,18 +32,19 @@
             <ul>
                 <c:forEach items="${category}" var="c">
                     <c:if test="${c.parentId == null}">
-                    <li id="${c.id}">${c.name}</li>
-
-                    <c:if test="${c.parentId != null}">
+                        <li id="${c.id}">${c.name}</li>
                         <ul>
-                            <c:forEach items="${c.id}" var="i">
-
+                            <c:forEach items="${category}" var="i">
+                                <c:if test="${i.parentId != null}">
+                                    <c:if test="${i.parentId==c.id}">
                                 <li id="item">${i.name}</li>
-
+                                    </c:if>
+                                </c:if>
                             </c:forEach>
                         </ul>
+
                     </c:if>
-                    </c:if>
+
                 </c:forEach>
             </ul>
         </section>
