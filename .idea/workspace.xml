@@ -7,35 +7,303 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a160d7ca-e164-4eec-8980-649a6ccb53a3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/test_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/test_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f24d354d-1beb-43cb-a511-b49ffc668f0f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f24d354d-1beb-43cb-a511-b49ffc668f0f.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_34.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/test/ctrl/CategoryCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/test/ctrl/CategoryCtrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/test/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/test/dao/CategoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/test/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/test/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/test/service/impl/CategoryServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/test/service/impl/CategoryServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CategoryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/categoryList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/categoryList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blank.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components-buttons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components-cards.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components-forms.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components-modals.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components-social-buttons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components-switches.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components-tables.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components-tabs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/font-awesome.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/simple-line-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Simple-Line-Icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Simple-Line-Icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Simple-Line-Icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Simple-Line-Icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Simple-Line-Icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons-font-awesome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons-simple-line-icons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/avatars/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/avatars/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/avatars/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/avatars/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/avatars/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/avatars/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/avatars/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/avatars/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/ASEAN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Afghanistan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/African Union.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Albania.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Algeria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/American Samoa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Andorra.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Angola.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Anguilla.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Antarctica.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Antigua &amp; Barbuda.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Arab League.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Argentina.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Armenia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Aruba.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Australia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Austria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Azerbaijan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Bahamas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Bahrain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Bangladesh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Barbados.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Belarus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Belgium.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Belize.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Benin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Bermuda.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Bhutan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Bolivia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Bosnia &amp; Herzegovina.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Botswana.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Brazil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Brunei.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Bulgaria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Burkina Faso.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Burundi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/CARICOM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/CIS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Cambodja.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Cameroon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Canada.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Cape Verde.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Cayman Islands.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Central African Republic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Chad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Chile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/China.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Colombia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Commonwealth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Comoros.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Congo-Brazzaville.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Congo-Kinshasa(Zaire).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Cook Islands.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Costa Rica.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Cote d'Ivoire.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Croatia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Cuba.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Cyprus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Czech Republic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Denmark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Djibouti.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Dominica.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Dominican Republic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Ecuador.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Egypt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/El Salvador.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/England.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Equatorial Guinea.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Eritrea.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Estonia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Ethiopia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/European Union.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Faroes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Fiji.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Finland.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/France.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Gabon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Gambia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Georgia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Germany.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Ghana.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Gibraltar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Greece.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Greenland.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Grenada.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Guadeloupe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Guam.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Guatemala.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Guernsey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Guinea-Bissau.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Guinea.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Guyana.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Haiti.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Honduras.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Hong Kong.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Hungary.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Iceland.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/India.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Indonezia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Iran.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Iraq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Ireland.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Islamic Conference.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Isle of Man.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Israel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Italy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Jamaica.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Japan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Jersey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Jordan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Kazakhstan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Kenya.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Kiribati.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Kosovo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Kuwait.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Kyrgyzstan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Laos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Latvia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Lebanon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Lesotho.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Liberia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Libya.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Liechtenshein.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Lithuania.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Luxembourg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Macao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Macedonia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Madagascar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Malawi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Malaysia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Maldives.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Mali.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Malta.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Marshall Islands.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Martinique.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Mauritania.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Mauritius.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Mexico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Micronesia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Moldova.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Monaco.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Mongolia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Montenegro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Montserrat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Morocco.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Mozambique.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Myanmar(Burma).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/NATO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Namibia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Nauru.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Nepal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Netherlands Antilles.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Netherlands.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/New Caledonia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/New Zealand.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Nicaragua.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Niger.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Nigeria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/North Korea.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Northern Cyprus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Northern Ireland.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Norway.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/OPEC.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Olimpic Movement.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Oman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Pakistan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Palau.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Palestine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Panama.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Papua New Guinea.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Paraguay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Peru.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Philippines.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Poland.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Portugal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Puerto Rico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Qatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Red Cross.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Reunion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Romania.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Russia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Rwanda.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Saint Lucia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Samoa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/San Marino.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Sao Tome &amp; Principe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Saudi Arabia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Scotland.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Senegal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Serbia(Yugoslavia).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Seychelles.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Sierra Leone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Singapore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Slovakia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Slovenia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Solomon Islands.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Somalia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Somaliland.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/South Africa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/South Korea.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Spain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Sri Lanka.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/St Kitts &amp; Nevis.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/St Vincent &amp; the Grenadines.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Sudan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Suriname.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Swaziland.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Sweden.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Switzerland.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Syria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Tahiti(French Polinesia).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Taiwan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Tajikistan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Tanzania.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Thailand.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Timor-Leste.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Togo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Tonga.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Trinidad &amp; Tobago.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Tunisia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Turkey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Turkmenistan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Turks and Caicos Islands.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Tuvalu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/USA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Uganda.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Ukraine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/United Arab Emirates.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/United Nations.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/United-Kingdom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Uruguay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Uzbekistan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Vanutau.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Vatican City.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Venezuela.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Viet Nam.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Virgin Islands British.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Virgin Islands US.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Wales.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Western Sahara.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Yemen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Zambia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/flags/Zimbabwe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/views/charts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/views/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/views/widgets.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages-404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages-500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages-login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages-register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/categoryManage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/categoryUpdate.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/widgets.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/categoryList1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/categoryList1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/CategoryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/test/ctrl/CategoryCtrl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/test/dao/CategoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/test/dao/CategoryDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/test/service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/test/service/CategoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/test/service/impl/CategoryServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/test/service/impl/CategoryServiceImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/marshmello/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/marshmello/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/marshmello/WEB-INF/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/marshmello/WEB-INF/classes/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/marshmello/WEB-INF/classes/mapper/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/marshmello/WEB-INF/classes/mapper/CategoryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/marshmello/WEB-INF/classes/org/test/ctrl/CategoryCtrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/marshmello/WEB-INF/classes/org/test/ctrl/CategoryCtrl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/marshmello/WEB-INF/classes/org/test/dao/CategoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/marshmello/WEB-INF/classes/org/test/dao/CategoryDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/marshmello/WEB-INF/classes/org/test/service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/marshmello/WEB-INF/classes/org/test/service/CategoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/marshmello/WEB-INF/classes/org/test/service/impl/CategoryServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/marshmello/WEB-INF/classes/org/test/service/impl/CategoryServiceImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/test.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -86,90 +354,7 @@
     <favorites_list name="test" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CategoryCtrl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/test/ctrl/CategoryCtrl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#663#679#0" expanded="true" />
-                <element signature="e#1005#1021#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="categoryList.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/categoryList.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editorList.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/editorList.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editorUpdate.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/editorUpdate.jsp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="categoryUpdate.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/categoryUpdate.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="categoryList1.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/categoryList1.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="categoryManage.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/categoryManage.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="44" column="18" lean-forward="true" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="988">
-              <caret line="253" column="36" selection-start-line="253" selection-start-column="36" selection-end-line="253" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CategoryMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CategoryMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -284,8 +469,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/CategoryMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/categoryManage.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/org/test/ctrl/CategoryCtrl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/categoryList1.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/categoryList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/categoryList1.jsp" />
       </list>
     </option>
   </component>
@@ -321,13 +506,15 @@
     </treeState>
   </component>
   <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="13" />
-    <option name="y" value="108" />
-    <option name="width" value="1182" />
-    <option name="height" value="792" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="396" />
+    <option name="y" value="141" />
+    <option name="width" value="1614" />
+    <option name="height" value="969" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -495,7 +682,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;DDL Data Source" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../xiaoxueqi/D3/E-Business-Platform" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.26884422" />
@@ -858,7 +1045,7 @@
       <workItem from="1530839819061" duration="3153000" />
       <workItem from="1530843242661" duration="4704000" />
       <workItem from="1531095152465" duration="796000" />
-      <workItem from="1531285201973" duration="9098000" />
+      <workItem from="1531285201973" duration="13156000" />
     </task>
     <task id="LOCAL-00001" summary="ok">
       <created>1511580781296</created>
@@ -1011,7 +1198,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="437770000" />
+    <option name="totallyTimeSpent" value="441828000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1024,7 +1211,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1935" height="1175" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32985657" />
@@ -1355,8 +1541,54 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/30db7fe3-4659-4c88-a4c9-6878de71d535/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="das://30db7fe3-4659-4c88-a4c9-6878de71d535/schema/dmcms/table/category">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/categoryList1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/categoryManage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/categoryUpdate.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/editorUpdate.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/editorList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/categoryList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CategoryMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1372,57 +1604,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/editorList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://30db7fe3-4659-4c88-a4c9-6878de71d535/schema/dmcms/table/category">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/categoryUpdate.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/categoryManage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="44" column="18" lean-forward="true" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/test/ctrl/CategoryCtrl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="448">
+          <caret line="28" column="45" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#663#679#0" expanded="true" />
             <element signature="e#1005#1021#0" expanded="true" />
+            <element signature="e#1388#1403#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/categoryList1.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/categoryList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
         </state>
       </provider>
     </entry>

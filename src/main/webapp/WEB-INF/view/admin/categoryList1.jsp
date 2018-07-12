@@ -42,9 +42,7 @@
                                 </c:if>
                             </c:forEach>
                         </ul>
-
                     </c:if>
-
                 </c:forEach>
             </ul>
         </section>
