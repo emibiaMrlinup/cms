@@ -232,7 +232,7 @@
 
                 </li>
                 <li>
-                    <a href="${pageContext.request.contextPath}/queryCategorylist1.do"
+                    <a href="${pageContext.request.contextPath}/queryCategorylist.do"
                        class="active-menu waves-effect waves-dark"><i class="fa fa-qrcode"></i>
                         栏目</a>
 
@@ -243,10 +243,10 @@
                             class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="#">文章列表</a>
+                            <a href="${pageContext.request.contextPath}/queryArticlelist.do">文章列表</a>
                         </li>
                         <li>
-                            <a href="#">修改文章</a>
+                            <a href="${pageContext.request.contextPath}/articleAddView.do">添加文章</a>
                         </li>
                         <li>
                             <a href="#">发布文章<span class="fa arrow"></span></a>
@@ -269,40 +269,18 @@
                 </li>
 
                 <li>
-                    <a href="chart.html" class="active-menu waves-effect waves-dark"><i class="fa fa-bar-chart-o"></i>
+                    <a href="#" class="active-menu waves-effect waves-dark"><i class="fa fa-bar-chart-o"></i>
                         媒体库管理<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="#">图片管理<span class="fa arrow"></span></a>
-                            <ul class="nav nav-third-level">
-                                <li>
-                                    <a href="#">图片列表</a>
-                                </li>
-                                <li>
-                                    <a href="#">上传</a>
-                                </li>
-                                <li>
-                                    <a href="#">更新</a>
-                                </li>
-
-                            </ul>
+                            <a href="${pageContext.request.contextPath}/queryMediaList.do">媒体库列表<span
+                                    class="fa arrow"></span></a>
                         </li>
 
                         <li>
-                            <a href="#">视频管理<span class="fa arrow"></span></a>
-                            <ul class="nav nav-third-level">
-                                <li>
-                                    <a href="#">视频列表</a>
-                                </li>
-                                <li>
-                                    <a href="#">上传</a>
-                                </li>
-                                <li>
-                                    <a href="#">更新</a>
-                                </li>
-
-                            </ul>
-
+                            <a href="${pageContext.request.contextPath}/mediaAddView.do">添加媒体库资源<span
+                                    class="fa arrow"></span></a>
+                            <%--<a href="${pageContext.request.contextPath}/AddMediaList.do">添加媒体库资源<span class="fa arrow"></span></a>--%>
                         </li>
                     </ul>
                 </li>

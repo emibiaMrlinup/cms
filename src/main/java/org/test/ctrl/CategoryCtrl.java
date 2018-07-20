@@ -19,15 +19,17 @@ public class CategoryCtrl {
     CategoryService mCategoryService;
 
     @RequestMapping("/queryCategorylist.do")
-    public ModelAndView reqEditorPage() {
+    public ModelAndView reqCategoryPage() {
         Map<String, Object> model = new HashMap<String, Object>();
         List<CategoryVO> categories = mCategoryService.getCategorys();
         model.put("categories", categories);
         return new ModelAndView("/admin/categoryList", model);
     }
-
-    @RequestMapping("/queryCategorylist1.do")
-    public ModelAndView reqEditorPage1() {
+/**
+ * @apiNote 前台获取到data  在前台做逻辑判断处理数据
+ * */
+    @RequestMapping("/queryCategorylists.do")
+    public ModelAndView reqCategoryPage1() {
         Map<String, Object> model = new HashMap<String, Object>();
         List<Category> categories = mCategoryService.getCategory();
         model.put("category", categories);

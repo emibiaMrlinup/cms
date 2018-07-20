@@ -23,6 +23,9 @@ target
 .idea/**/gradle.xml
 .idea/**/libraries
 
+.DS_Store
+*/.DS_Store
+
 # CMake
 cmake-build-debug/
 cmake-build-release/
@@ -81,7 +84,6 @@ hs_err_pid*
 ### Example user template
 
 # IntelliJ project files
-.idea
-*.iml
+.idea*.iml
 out
 gen
