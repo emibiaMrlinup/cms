@@ -4,9 +4,11 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- namespace实际上接口的名字 -->
 <mapper namespace="org.test.dao.CategoryDao">
+
     <select id="getCategorys" resultType="Category">
         select * from category
     </select>
+
 
 
     <!--<select id="findById" parameterType="Int" resultType="User">-->

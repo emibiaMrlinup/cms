@@ -7,6 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.test.dao.UserDao;
 import org.test.entity.User;
 import org.test.service.UserService;
+import org.test.util.LogMessage;
 
 import java.util.List;
 
@@ -32,7 +33,6 @@ public class UserServiceImp implements UserService {
      */
     @Override
     public User login(String mUsername, String mUserPassword) {
-
         return mUserDao.findByUserNameAndPassword(mUsername, mUserPassword);
     }
 
@@ -44,6 +44,10 @@ public class UserServiceImp implements UserService {
     @Override
     public boolean addEditor(User editor) {
         mUserDao.addEditor(editor);
+        //logger.info("Added Editor: " + editor.getUsername());
+        logger.info(LogMessage.getMessage(LogMessage.ADD_EDITOR, editor.getUsername()));
+
+        logger.info(LogMessage.getMessage(LogMessage.ADD_OTHER));
         return true;
     }
 

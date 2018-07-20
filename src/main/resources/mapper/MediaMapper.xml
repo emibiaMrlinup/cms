@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD
+ Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace实际上接口的名字 -->
+<mapper namespace="org.test.dao.MediaDao">
+
+
+    <select id="getMedia" resultType="Media">
+        select *
+        from media
+    </select>
+
+    <select id="findById" parameterType="Int" resultType="Media">
+        select *
+        from media
+        where id = #{id}
+    </select>
+    <update id="updateMedia" parameterType="Media">
+        update media
+        set name = #{name}, type = #{type}, path = #{path}
+        where id = #{id}
+    </update>
+
+    <insert id="addMedia" parameterType="Media">
+        insert into media (name, type, path) values (#{name}, #{type}, #{path})
+    </insert>
+    <delete id="delete">
+        <!--数据库user表的id =#{实体类中的id属性}-->
+        delete from media where id=#{id}
+    </delete>
+
+
+</mapper>
