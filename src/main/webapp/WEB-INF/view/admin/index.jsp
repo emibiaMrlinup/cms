@@ -295,8 +295,16 @@
                     <!--<a href="table.html" class="active-menu waves-effect waves-dark"><i class="fa fa-edit"></i> 系统管理<span class="fa arrow"></span></a>-->
                 </li>
                 <li>
-                    <a href="form.html" class="active-menu waves-effect waves-dark"><i class="fa  fa-table"></i>
+                    <a href="#" class="active-menu waves-effect waves-dark"><i class="fa  fa-table"></i>
                         表单管理<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="${pageContext.request.contextPath}/formlist.do">表单列表</a>
+                        </li>
+                        <li>
+                            <a href="${pageContext.request.contextPath}/addFormeleView.do">表单元素管理</a>
+                        </li>
+                    </ul>
                 </li>
 
 
