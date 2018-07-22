@@ -18,7 +18,7 @@ import java.util.Map;
  * @apiNote UserCtrl用户模块管理的控制器
  */
 @Controller
-public class UserCtrl {
+public class UserCtrl{
 
     private UserService mUserService;
 

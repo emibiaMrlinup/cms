@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD
+ Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace实际上接口的名字 -->
+<mapper namespace="org.test.dao.FormeleDao">
+    <select id="geteles"  resultType="Formele">
+    select  *  from formele
+</select>
+    <insert id="addEle" parameterType="Formele">
+        insert  into formele (name,formname) values (#{name},#{formname})
+    </insert>
+    <delete id="delete" parameterType="Formele">
+        delete from formele where id=#{id}
+    </delete>
+</mapper>

@@ -7,7 +7,7 @@ public class Media {
     private String name;
     private String type;
     private String path;
-    private Integer categoryId;
+    private int categoryId;
 
 
     public int getId() {
@@ -46,11 +46,11 @@ public class Media {
     }
 
 
-    public Integer getCategoryId() {
+    public int getCategoryId() {
         return categoryId;
     }
 
-    public void setCategoryId(Integer categoryId) {
+    public void setCategoryId(int categoryId) {
         this.categoryId = categoryId;
     }
 

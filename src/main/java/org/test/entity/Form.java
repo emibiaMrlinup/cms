@@ -3,16 +3,17 @@ package org.test.entity;
 
 public class Form {
 
-    private int id;
+    private String id;
     private String name;
-    private String table;
+    private String publish;
+    private String categoris;
+    private String articles;
 
-
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -26,12 +27,27 @@ public class Form {
     }
 
 
-    public String getTable() {
-        return table;
+    public String getPublish() {
+        return publish;
     }
 
-    public void setTable(String table) {
-        this.table = table;
+    public void setPublish(String publish) {
+        this.publish = publish;
     }
 
+    public String getCategoris() {
+        return categoris;
+    }
+
+    public void setCategoris(String categoris) {
+        this.categoris = categoris;
+    }
+
+    public String getArticles() {
+        return articles;
+    }
+
+    public void setArticles(String articles) {
+        this.articles = articles;
+    }
 }

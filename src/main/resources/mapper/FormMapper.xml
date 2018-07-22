@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD
+ Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace实际上接口的名字 -->
+<mapper namespace="org.test.dao.FormDao">
+<select id="getForms"  resultType="Form">
+    select  *  from form
+</select>
+    <select id="findById" parameterType="Int" resultType="Form">
+        select * from form where id = #{id}
+    </select>
+ <update id="updateForm" parameterType="Form">
+        update form set name = #{name},publish=#{publish},categoris=#{categoris},articles=#{articles} where id = #{id}
+ </update>
+    <insert id="addForm" parameterType="Form">
+        insert  into form (name,publish,categoris,articles) values (#{name},#{publish},#{categoris},#{articles})
+    </insert>
+    <delete id="deleteForm" parameterType="Form">
+        delete from form where id=#{id}
+    </delete>
+</mapper>
