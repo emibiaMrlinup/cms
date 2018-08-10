@@ -11,12 +11,14 @@
         select * from form where id = #{id}
     </select>
  <update id="updateForm" parameterType="Form">
-        update form set name = #{name},publish=#{publish},categoris=#{categoris},articles=#{articles} where id = #{id}
+        update form
+        set name = #{name}, publish = #{publish}, categoris = #{categoris}, articles = #{articles}
+        where id = #{id}
  </update>
     <insert id="addForm" parameterType="Form">
         insert  into form (name,publish,categoris,articles) values (#{name},#{publish},#{categoris},#{articles})
     </insert>
-    <delete id="deleteForm" parameterType="Form">
-        delete from form where id=#{id}
+    <delete id="deleteForm">
+        delete from form where id = #{id}
     </delete>
 </mapper>

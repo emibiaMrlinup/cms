@@ -40,7 +40,7 @@ public class MediaServiceImp implements MediaService {
 
     @Override
     public boolean addMedia(Media media) {
-        logger.info(LogMessage.getMessage(LogMessage.ADD_MEDIA, media.getName(), media.getPath()));
+//        logger.info(LogMessage.getMessage(LogMessage.ADD_MEDIA, media.getName(), media.getPath()));
         return mediaDao.addMedia(media) > 0;
     }
 

@@ -3,45 +3,45 @@ package org.test.entity;
 
 public class Template {
 
-    private int id;
-    private String name;
-    private String path;
-    private int status;
+  private int id;
+  private String name;
+  private String path;
+  private int status;
 
 
-    public int getId() {
-        return id;
-    }
+  public int getId() {
+    return id;
+  }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+  public void setId(int id) {
+    this.id = id;
+  }
 
 
-    public String getPath() {
-        return path;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public void setPath(String path) {
-        this.path = path;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
 
-    public int getStatus() {
-        return status;
-    }
+  public String getPath() {
+    return path;
+  }
 
-    public void setStatus(int status) {
-        this.status = status;
-    }
+  public void setPath(String path) {
+    this.path = path;
+  }
+
+
+  public int getStatus() {
+    return status;
+  }
+
+  public void setStatus(int status) {
+    this.status = status;
+  }
 
 }

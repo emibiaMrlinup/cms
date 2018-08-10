@@ -48,6 +48,9 @@ public class MediaCtrl {
      */
     @RequestMapping("/mediaUpdate.do")
     public ModelAndView updateMediaView(Media media) {
+
+
+
         boolean ok = mediaService.updateMedia(media);
         Map<String, Object> model = new HashMap<String, Object>();
         List<Media> me = mediaService.getMedia();

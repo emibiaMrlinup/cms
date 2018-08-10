@@ -12,16 +12,14 @@ public class ArticleServiceImp implements ArticleService {
     @Autowired
     ArticleDao mArtcileDao;
     @Override
-    public List<Article> getArtciles() {
+    public List<Article> getArticles() {
         return mArtcileDao.getArticles();
     }
 
     @Override
-    public boolean addArticle(Article article) {
-
-       mArtcileDao.addArticle(article);
-
-        return true;
+    public long addArticle(Article article) {
+        mArtcileDao.addArticle(article);
+        return article.getId();
     }
 
 
@@ -29,5 +27,17 @@ public class ArticleServiceImp implements ArticleService {
     public boolean delete(String id) {
         return mArtcileDao.delete(id) > 0;
     }
+
+    @Override
+    public Article SelectById(int id) {
+        return mArtcileDao.findById(id);
+    }
+
+    @Override
+    public boolean updateArticle(Article article) {
+
+        return mArtcileDao.updateArticle(article) > 0;
+    }
+
 
 }

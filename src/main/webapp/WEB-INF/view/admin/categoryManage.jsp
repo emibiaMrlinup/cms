@@ -36,7 +36,7 @@
                             <td>${i.parentId}</td>
                             <td>
                                 <a href="${pageContext.request.contextPath}/CategoryUpdateView.do?id=${i.id}">修改</a>
-                                <a href="${pageContext.request.contextPath}/CategoryDelete.do?id=${i.id}">删除</a>
+                                <a href="${pageContext.request.contextPath}/CategoryDelete.do?id=${i.id}&parentId=${i.parentId}">删除</a>
                             </td>
                         </tr>
                     </c:forEach>

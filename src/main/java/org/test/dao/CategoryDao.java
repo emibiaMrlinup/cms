@@ -13,7 +13,8 @@ import java.util.List;
 public interface CategoryDao {
     List<Category> getCategorys();
     public  int updateCategorys(Category categorys);
-    public int deleteCategorys(String id);
     public void addCategorys(Category categorys);
     Category findById(int id);
+    int deleteCategorys(String id);
+    int deleteChildCategorys(String id);
 }

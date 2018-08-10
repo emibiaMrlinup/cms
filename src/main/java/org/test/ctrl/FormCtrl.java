@@ -2,10 +2,9 @@ package org.test.ctrl;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.query.Param;
+
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.MissingPathVariableException;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -18,7 +17,7 @@ import org.test.service.CategoryService;
 import org.test.service.EleService;
 import org.test.service.FormService;
 
-import javax.jws.WebParam;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -35,7 +34,7 @@ public class FormCtrl {
     ArticleService articleService;
 
 //表单列表
-@RequestMapping("/formlist.do")
+@RequestMapping("/formList.do")
     public ModelAndView getFormList(){
     Map<String,Object> model = new HashMap<String,Object>();
     List<Form> forms = formService.getForms();
@@ -48,7 +47,7 @@ public class FormCtrl {
 public ModelAndView gotoAddView(){
     Map<String,Object> model = new HashMap<String,Object>();
     List<Category> cate = categoryService.getCategory();
-    List<Article> article = articleService.getArtciles();
+    List<Article> article = articleService.getArticles();
     model.put("cates",cate);
     model.put("articles",article);
     return new ModelAndView("/admin/formAdd",model);
@@ -119,11 +118,19 @@ public ModelAndView InPageAddElement(String formname,String name){
 
 //修改表单
 @RequestMapping("/FormUpdateView.do")
-    public ModelAndView gotoupdateView(@RequestParam("id") int id){
+    public ModelAndView GotoUpdateView(@RequestParam("id") int id){
     Form form = formService.QueryById(id);
     Map<String,Object> model =  new HashMap<String,Object>();
     model.put("form",form);
     return new ModelAndView("/admin/formUpdate",model);
+}
+@RequestMapping("/FormUpdate.do")
+public ModelAndView UpdateForm(Form form){
+    boolean ok = formService.updateForm(form);
+    Map<String,Object> model = new HashMap<String,Object>();
+    List<Form> forms  = formService.getForms();
+    model.put("forms",forms);
+    return new ModelAndView("/admin/formList",model);
 }
 //删除表单
 @RequestMapping("/FormDelete.do")

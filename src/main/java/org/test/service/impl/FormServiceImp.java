@@ -23,8 +23,7 @@ public class FormServiceImp implements FormService {
 
     @Override
     public boolean updateForm(Form form) {
-        formDao.updateForm(form);
-        return true;
+        return formDao.updateForm(form)>0;
     }
 
     @Override

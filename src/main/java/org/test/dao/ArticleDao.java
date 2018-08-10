@@ -17,8 +17,15 @@ public interface ArticleDao {
 
     List<Article> getArticles();
 
-    public void addArticle(Article article);
+    int addArticle(Article article);
 
     public int delete(String id);
+
+    public Article findById(long id);
+    //根据随机点击的文章id 进行查询文章
+    public Article queryById(long id);
+
+    public int updateArticle(Article article);
+
 
 }

@@ -12,10 +12,10 @@ import java.util.List;
 
 
 /**
- * @author marshmello
- * @apiNote UserServiceImp类的继承UserService具体实现
- * @resourse 注入mapper 调用mapper接口里声明的crud方法
- * @tips 1：配置文件 导入mybatis类库要与mybatis-spring版本匹配 2：@Transactional表示该类被Spring作为管理事务的类
+ * @author  marshmello
+ * @apiNote  UserServiceImp类的继承UserService具体实现
+ * @resoourse 注入mapper 调用mapper接口里声明的crud方法
+ * @tips  1：配置文件 导入mybatis类库要与mybatis-spring版本匹配 2：@Transactional表示该类被Spring作为管理事务的类
  */
 
 @Service
@@ -26,7 +26,6 @@ public class UserServiceImp implements UserService {
 
     @Autowired
     UserDao mUserDao;
-
     /**
      * @apiNote 登录 根据用户名和密码进行查询
      */
@@ -38,7 +37,7 @@ public class UserServiceImp implements UserService {
 
     @Override
     public List<User> getEditors() {
-        return mUserDao.getEditors();
+        return mUserDao.getEditors() ;
     }
 
     @Override
@@ -59,7 +58,7 @@ public class UserServiceImp implements UserService {
 
     @Override
     public boolean updateEditor(User editor) {
-        return mUserDao.updateEditor(editor) > 0;
+        return mUserDao.updateEditor(editor)>0;
     }
 
 

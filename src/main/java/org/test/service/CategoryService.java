@@ -11,6 +11,7 @@ public interface CategoryService {
     List<Category> getCategory();
     public boolean addCategorys(Category categorys);
     public boolean deleteCategorys(String id);
+    public boolean deleteChildCategorys(String id);
     public boolean updateCategorys(Category categorys);
     public Category QueryById(int id);
 }

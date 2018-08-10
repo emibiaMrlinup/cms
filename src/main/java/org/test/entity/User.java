@@ -2,59 +2,59 @@ package org.test.entity;
 
 /**
  * @author marshmello
- * @apiNote 用户实体类
- */
+ * @apiNote  用户实体类
+ * */
 public class User {
 
-    private String id;
-    private String username;
-    private String password;
-    private String sex;
-    private String role;
+  private String id;
+  private String username;
+  private String password;
+  private String sex;
+  private String role;
 
 
-    public String getId() {
-        return id;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
+  public void setId(String id) {
+    this.id = id;
+  }
 
 
-    public String getPassword() {
-        return password;
-    }
+  public String getUsername() {
+    return username;
+  }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
+  public void setUsername(String username) {
+    this.username = username;
+  }
 
 
-    public String getRole() {
-        return role;
-    }
+  public String getPassword() {
+    return password;
+  }
 
-    public void setRole(String role) {
-        this.role = role;
-    }
+  public void setPassword(String password) {
+    this.password = password;
+  }
+
+
+  public String getSex() {
+    return sex;
+  }
+
+  public void setSex(String sex) {
+    this.sex = sex;
+  }
+
+
+  public String getRole() {
+    return role;
+  }
+
+  public void setRole(String role) {
+    this.role = role;
+  }
 
 }

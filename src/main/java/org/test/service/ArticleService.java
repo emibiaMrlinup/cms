@@ -1,14 +1,21 @@
 package org.test.service;
 
 import org.test.entity.Article;
-import org.test.entity.User;
+
 
 import java.util.List;
 
 public interface ArticleService {
-    List<Article> getArtciles();
 
-    public boolean addArticle(Article article);
+    List<Article> getArticles();
+
+    long addArticle(Article article);
 
     public boolean delete(String id);
+
+    //查询最新编辑的文章id
+    public Article SelectById(int id);
+
+    public boolean updateArticle(Article article);
+
 }

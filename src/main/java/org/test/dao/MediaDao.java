@@ -2,8 +2,6 @@ package org.test.dao;
 
 import org.springframework.stereotype.Repository;
 import org.test.entity.Media;
-import org.test.entity.User;
-
 import java.util.List;
 
 @Repository

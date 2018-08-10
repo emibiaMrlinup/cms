@@ -1,675 +1,379 @@
-﻿<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>MCMS</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="assets/materialize/css/materialize.min.css" media="screen,projection"/>
-    <!-- Bootstrap Styles-->
-    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
-    <!-- FontAwesome Styles-->
-    <link href="assets/css/font-awesome.css" rel="stylesheet"/>
-    <!-- Morris Chart Styles-->
-    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet"/>
-    <!-- Custom Styles-->
-    <link href="assets/css/custom-styles.css" rel="stylesheet"/>
-    <!-- Google Fonts-->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
-    <link rel="stylesheet" href="assets/js/Lightweight-Chart/cssCharts.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>CMS by unicorn team</title>
+    <!-- Bootstrap core CSS-->
+    <!--<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">-->
+    <link id="skinReplace" href="../../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template-->
+    <link href="../../../assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Page level plugin CSS-->
+    <link href="../../../assets/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="../../../assets/css/sb-admin.css" rel="stylesheet">
+
+    <!-- Include stylesheet editor -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 </head>
 
-<body>
-<div id="wrapper">
-    <nav class="navbar navbar-default top-navbar" role="navigation">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle waves-effect waves-dark" data-toggle="collapse"
-                    data-target=".sidebar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand waves-effect waves-dark" href="index.jsp"><i class="large material-icons">track_changes</i>
-                <strong>MCMS</strong></a>
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="${pageContext.request.contextPath}/">unicorn</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
 
-            <div id="sideNav" href=""><i class="material-icons dp48">toc</i></div>
-        </div>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                <a class="nav-link" href="#">
+                    <i class="fa fa-fw fa-dashboard"></i>
+                    <span class="nav-link-text">Dashboard</span>
+                </a>
+            </li>
 
-        <ul class="nav navbar-top-links navbar-right">
-            <li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown4"><i
-                    class="fa fa-envelope fa-fw"></i> <i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown3"><i
-                    class="fa fa-tasks fa-fw"></i> <i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown2"><i
-                    class="fa fa-bell fa-fw"></i> <i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown1"><i
-                    class="fa fa-user fa-fw"></i> <b>用户名：${principal.username}</b> <i class="material-icons right">arrow_drop_down</i></a>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="系统管理">
+                <a class="nav-link" href="${pageContext.request.contextPath}/">
+                    <i class="fa fa-fw fa-cog"></i>
+                    <span class="nav-link-text">System mange</span>
+                </a>
+            </li>
+
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti"
+                   data-parent="#exampleAccordion">
+                    <i class="fa fa-fw fa-pencil"></i>
+                    <span class="nav-link-text"> Content edit </span>
+                </a>
+
+                <ul class="sidenav-second-level collapse" id="collapseMulti">
+                    <li>
+                        <a href="${pageContext.request.contextPath}/articleList.do"> article </a>
+                        <%--<a href="article.jsp" data-toggle="collapse" data-target="#artList">article</a>--%>
+                    </li>
+                    <li>
+                        <a href="${pageContext.request.contextPath}/queryMediaList.do">media</a>
+                    </li>
+                            <%--<i class="fa fa-fw fa-table"></i>--%>
+                    <li>
+                        <a class="nav-link" href="/formList.do">
+                            <%--<i class="fa fa-fw fa-table"></i>--%>
+                            <span>form </span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+                <a class="nav-link" href="/QuestionListView.do">
+                    <i class="fa fa-fw fa-question"></i>
+                    <span class="nav-link-text"> Question </span>
+                </a>
+            </li>
+
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages"
+                   data-parent="#exampleAccordion">
+                    <i class="fa fa-fw fa-user"></i>
+                    <span class="nav-link-text">User</span>
+                </a>
+                <ul class="sidenav-second-level collapse" id="collapseExamplePages">
+                    <li>
+                        <a href="${pageContext.request.contextPath}/queryEditorList.do">user list</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents"
+                   data-parent="#exampleAccordion">
+                    <i class="fa fa-fw  fa-refresh"></i>
+                    <span class="nav-link-text">template mange</span>
+                </a>
+                <ul class="sidenav-second-level collapse" id="collapseComponents">
+                    <li>
+                        <a href="#">skin</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+                <a class="nav-link" href="https://github.com/domarshmello/cms">
+                    <i class="fa fa-fw fa-github"></i>
+                    <span class="nav-link-text">github</span>
+                </a>
+            </li>
+
+        </ul>
+        <ul class="navbar-nav sidenav-toggler">
+            <li class="nav-item">
+                <a class="nav-link text-center" id="sidenavToggler">
+                    <i class="fa fa-fw fa-angle-left"></i>
+                </a>
             </li>
         </ul>
-        <form id="logoutForm" action="/logout" method="post">
-        </form>
-    </nav>
-    <!-- Dropdown Structure -->
-    <ul id="dropdown1" class="dropdown-content">
-        <li><a href="#"><i class="fa fa-user fa-fw"></i> My Profile</a>
-        </li>
-        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-        </li>
-        <li><a href="javascript:document:logoutForm.submit();"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-        </li>
-    </ul>
-    <ul id="dropdown2" class="dropdown-content w250">
-        <li>
-            <div>
-                <i class="fa fa-comment fa-fw"></i> New Comment
-                <span class="pull-right text-muted small">4 min</span>
-            </div>
-            </a>
-        </li>
-        <li class="divider"></li>
-        <li>
-            <div>
-                <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                <span class="pull-right text-muted small">12 min</span>
-            </div>
-            </a>
-        </li>
-        <li class="divider"></li>
-        <li>
-            <div>
-                <i class="fa fa-envelope fa-fw"></i> Message Sent
-                <span class="pull-right text-muted small">4 min</span>
-            </div>
-            </a>
-        </li>
-        <li class="divider"></li>
-        <li>
-            <div>
-                <i class="fa fa-tasks fa-fw"></i> New Task
-                <span class="pull-right text-muted small">4 min</span>
-            </div>
-            </a>
-        </li>
-        <li class="divider"></li>
-        <li>
-            <div>
-                <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                <span class="pull-right text-muted small">4 min</span>
-            </div>
-            </a>
-        </li>
-        <li class="divider"></li>
-        <li>
-            <a class="text-center" href="#">
-                <strong>See All Alerts</strong>
-                <i class="fa fa-angle-right"></i>
-            </a>
-        </li>
-    </ul>
-    <ul id="dropdown3" class="dropdown-content dropdown-tasks w250">
-        <li>
-            <a href="#">
-                <div>
-                    <p>
-                        <strong>Task 1</strong>
-                        <span class="pull-right text-muted">60% Complete</span>
-                    </p>
-                    <div class="progress progress-striped active">
-                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60"
-                             aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                            <span class="sr-only">60% Complete (success)</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </li>
-        <li class="divider"></li>
-        <li>
-            <a href="#">
-                <div>
-                    <p>
-                        <strong>Task 2</strong>
-                        <span class="pull-right text-muted">28% Complete</span>
-                    </p>
-                    <div class="progress progress-striped active">
-                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="28"
-                             aria-valuemin="0" aria-valuemax="100" style="width: 28%">
-                            <span class="sr-only">28% Complete</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </li>
-        <li class="divider"></li>
-        <li>
-            <a href="#">
-                <div>
-                    <p>
-                        <strong>Task 3</strong>
-                        <span class="pull-right text-muted">60% Complete</span>
-                    </p>
-                    <div class="progress progress-striped active">
-                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
-                             aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                            <span class="sr-only">60% Complete (warning)</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </li>
-        <li class="divider"></li>
-        <li>
-            <a href="#">
-                <div>
-                    <p>
-                        <strong>Task 4</strong>
-                        <span class="pull-right text-muted">85% Complete</span>
-                    </p>
-                    <div class="progress progress-striped active">
-                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="85"
-                             aria-valuemin="0" aria-valuemax="100" style="width: 85%">
-                            <span class="sr-only">85% Complete (danger)</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </li>
-        <li class="divider"></li>
-        <li>
-    </ul>
-    <ul id="dropdown4" class="dropdown-content dropdown-tasks w250 taskList">
-        <li>
-            <div>
-                <strong>John Doe</strong>
-                <span class="pull-right text-muted">
-                                        <em>Today</em>
-                                    </span>
-            </div>
-            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
-            </a>
-        </li>
-        <li class="divider"></li>
-        <li>
-            <div>
-                <strong>John Smith</strong>
-                <span class="pull-right text-muted">
-                                        <em>Yesterday</em>
-                                    </span>
-            </div>
-            <p>Lorem Ipsum has been the industry's standard dummy text ever since an kwilnw...</p>
-            </a>
-        </li>
-        <li class="divider"></li>
-        <li>
-            <a href="#">
-                <div>
-                    <strong>John Smith</strong>
-                    <span class="pull-right text-muted">
-                                        <em>Yesterday</em>
-                                    </span>
-                </div>
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the...</p>
-            </a>
-        </li>
-        <li class="divider"></li>
-        <li>
-            <a class="text-center" href="#">
-                <strong>Read All Messages</strong>
-                <i class="fa fa-angle-right"></i>
-            </a>
-        </li>
-    </ul>
-    <!--/. NAV TOP  -->
-    <nav class="navbar-default navbar-side" role="navigation">
-        <div class="sidebar-collapse">
-            <ul class="nav" id="main-menu">
-
-                <li>
-                    <a href="index.jsp" class="active-menu waves-effect waves-dark"><i class="fa fa-desktop"></i>
-                        工作台</a>
-
-                </li>
-                <li>
-                    <a href="${pageContext.request.contextPath}/queryCategorylist.do"
-                       class="active-menu waves-effect waves-dark"><i class="fa fa-qrcode"></i>
-                        栏目</a>
-
-                </li>
-
-                <li>
-                    <a href="#" class="active-menu waves-effect waves-dark"><i class="fa fa-dashboard"></i> 信息管理<span
-                            class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li>
-                            <a href="${pageContext.request.contextPath}/queryArticlelist.do">文章列表</a>
-                        </li>
-                        <li>
-                            <a href="${pageContext.request.contextPath}/articleAddView.do">添加文章</a>
-                        </li>
-                        <li>
-                            <a href="#">发布文章<span class="fa arrow"></span></a>
-                            <ul class="nav nav-third-level">
-                                <li>
-                                    <a href="#">录入信息内容</a>
-                                </li>
-                                <li>
-                                    <a href="#">11111</a>
-                                </li>
-
-                            </ul>
-
-                        </li>
-                        <li>
-                            <a href="#">删除文章</a>
-                        </li>
-                    </ul>
-
-                </li>
-
-                <li>
-                    <a href="#" class="active-menu waves-effect waves-dark"><i class="fa fa-bar-chart-o"></i>
-                        媒体库管理<span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li>
-                            <a href="${pageContext.request.contextPath}/queryMediaList.do">媒体库列表<span
-                                    class="fa arrow"></span></a>
-                        </li>
-
-                        <li>
-                            <a href="${pageContext.request.contextPath}/mediaAddView.do">添加媒体库资源<span
-                                    class="fa arrow"></span></a>
-                            <%--<a href="${pageContext.request.contextPath}/AddMediaList.do">添加媒体库资源<span class="fa arrow"></span></a>--%>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="tab-panel.html" class="active-menu waves-effect waves-dark"><i class="fa fa-qrcode"></i>
-                        调查问卷管理<span class="fa arrow"></span></a>
-                </li>
-
-                <li>
-                    <a href="table.html" class="active-menu waves-effect waves-dark"><i class="fa fa-magic"></i>
-                        系统管理<span class="fa arrow"></span></a>
-                    <!--<a href="table.html" class="active-menu waves-effect waves-dark"><i class="fa fa-edit"></i> 系统管理<span class="fa arrow"></span></a>-->
-                </li>
-                <li>
-                    <a href="#" class="active-menu waves-effect waves-dark"><i class="fa  fa-table"></i>
-                        表单管理<span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li>
-                            <a href="${pageContext.request.contextPath}/formlist.do">表单列表</a>
-                        </li>
-                        <li>
-                            <a href="${pageContext.request.contextPath}/addFormeleView.do">表单元素管理</a>
-                        </li>
-                    </ul>
-                </li>
-
-
-                <li>
-                    <a href="#" class="active-menu waves-effect waves-dark"><i class="fa fa-sitemap"></i> 模板管理<span
-                            class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li>
-                            <a href="#">模板列表</a>
-                        </li>
-                        <li>
-                            <a href="#">增加模板</a>
-                        </li>
-                        <li>
-                            <a href="#">皮肤管理<span class="fa arrow"></span></a>
-                            <ul class="nav nav-third-level">
-                                <li>
-                                    <a href="#">皮肤1</a>
-                                </li>
-                                <li>
-                                    <a href="#">皮肤2</a>
-                                </li>
-                                <li>
-                                    <a href="#">皮肤3</a>
-                                </li>
-
-                            </ul>
-
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="empty.html" class="active-menu waves-effect waves-dark"><i class="fa fa-fw fa-users"></i>
-                        用户管理<span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li>
-                            <a href="#">角色管理<span class="fa arrow"></span></a>
-                            <ul class="nav nav-third-level">
-                                <li>
-                                    <a href="${pageContext.request.contextPath}/queryEditorList.do">信息录入员列表</a>
-                                </li>
-                                <li>
-                                    <a href="${pageContext.request.contextPath}/editorAddView.do">增加信息录入员</a>
-                                </li>
-
-                            </ul>
-
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-
-        </div>
-
-    </nav>
-    <!-- /. NAV SIDE  -->
-
-    <div id="page-wrapper">
-        <div class="header">
-            <h1 class="page-header">
-                今天日期
-            </h1>
-            <ol class="breadcrumb">
-                <li><a href="#">首页</a></li>
-                <li><a href="#">工作台</a></li>
-            </ol>
-
-        </div>
-        <div id="page-inner">
-
-            <div class="dashboard-cards">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-
-                        <div class="card horizontal cardIcon waves-effect waves-dark">
-                            <div class="card-image red">
-                                <i class="material-icons dp48">import_export</i>
-                            </div>
-                            <div class="card-stacked red">
-                                <div class="card-content">
-                                    <h3>84,198</h3>
-                                </div>
-                                <div class="card-action">
-                                    <strong>REVENUE</strong>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-
-                        <div class="card horizontal cardIcon waves-effect waves-dark">
-                            <div class="card-image orange">
-                                <i class="material-icons dp48">shopping_cart</i>
-                            </div>
-                            <div class="card-stacked orange">
-                                <div class="card-content">
-                                    <h3>36,540</h3>
-                                </div>
-                                <div class="card-action">
-                                    <strong>SALES</strong>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-
-                        <div class="card horizontal cardIcon waves-effect waves-dark">
-                            <div class="card-image blue">
-                                <i class="material-icons dp48">equalizer</i>
-                            </div>
-                            <div class="card-stacked blue">
-                                <div class="card-content">
-                                    <h3>24,225</h3>
-                                </div>
-                                <div class="card-action">
-                                    <strong>PRODUCTS</strong>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-
-                        <div class="card horizontal cardIcon waves-effect waves-dark">
-                            <div class="card-image green">
-                                <i class="material-icons dp48">supervisor_account</i>
-                            </div>
-                            <div class="card-stacked green">
-                                <div class="card-content">
-                                    <h3>88,658</h3>
-                                </div>
-                                <div class="card-action">
-                                    <strong>VISITS</strong>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <!-- /. ROW  -->
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-7">
-                    <div class="cirStats">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6 col-md-6">
-                                <div class="card-panel text-center">
-                                    <h4>Profit</h4>
-                                    <div class="easypiechart" id="easypiechart-blue" data-percent="82"><span
-                                            class="percent">82%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6">
-                                <div class="card-panel text-center">
-                                    <h4>No. of Visits</h4>
-                                    <div class="easypiechart" id="easypiechart-red" data-percent="46"><span
-                                            class="percent">46%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6">
-                                <div class="card-panel text-center">
-                                    <h4>Customers</h4>
-                                    <div class="easypiechart" id="easypiechart-teal" data-percent="84"><span
-                                            class="percent">84%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6">
-                                <div class="card-panel text-center">
-                                    <h4>Sales</h4>
-                                    <div class="easypiechart" id="easypiechart-orange" data-percent="55"><span
-                                            class="percent">55%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/.row-->
-                <div class="col-xs-12 col-sm-12 col-md-5">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="card">
-                                <div class="card-image donutpad">
-                                    <div id="morris-donut-chart"></div>
-                                </div>
-                                <div class="card-action">
-                                    <b>Donut Chart Example</b>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/.row-->
-            </div>
-
-
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="card">
-                        <div class="card-image">
-                            <div id="morris-line-chart"></div>
-                        </div>
-                        <div class="card-action">
-                            <b>Line Chart</b>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-md-7">
-                    <div class="card">
-                        <div class="card-image">
-                            <div id="morris-bar-chart"></div>
-                        </div>
-                        <div class="card-action">
-                            <b> Bar Chart Example</b>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="card">
-                        <div class="card-image">
-                            <div id="morris-area-chart"></div>
-                        </div>
-                        <div class="card-action">
-                            <b>Area Chart</b>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-
-                </div>
-            </div>
-            <!-- /. ROW  -->
-
-            <div class="row">
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                    <div class="card">
-                        <div class="card-action">
-                            <b>Tasks Panel</b>
-                        </div>
-                        <div class="card-image">
-                            <div class="collection">
-                                <a href="#" class="collection-item">Red<span class="new badge red"
-                                                                             data-badge-caption="red">4</span></a>
-                                <a href="#" class="collection-item">Blue<span class="new badge blue"
-                                                                              data-badge-caption="blue">4</span></a>
-                                <a href="#" class="collection-item"><span class="badge">1</span>Alan</a>
-                                <a href="#!" class="collection-item"><span class="new badge">4</span>Alan</a>
-                                <a href="#!" class="collection-item">Alan<span class="new badge blue"
-                                                                               data-badge-caption="blue">4</span></a>
-                                <a href="#!" class="collection-item"><span class="badge">14</span>Alan</a>
-                                <a href="#!" class="collection-item">Custom Badge Captions<span class="new badge"
-                                                                                                data-badge-caption="custom caption">4</span></a>
-                                <a href="#!" class="collection-item">Custom Badge Captions<span class="badge"
-                                                                                                data-badge-caption="custom caption">4</span></a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="col-md-8 col-sm-12 col-xs-12">
-                    <div class="card">
-                        <div class="card-action">
-                            <b>User List</b>
-                        </div>
-                        <div class="card-image">
-                            <ul class="collection">
-                                <li class="collection-item avatar">
-                                    <i class="material-icons circle green">track_changes</i>
-                                    <span class="title">Title</span>
-                                    <p>First Line <br>
-                                        Second Line
-                                    </p>
-                                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                </li>
-                                <li class="collection-item avatar">
-                                    <i class="material-icons circle">folder</i>
-                                    <span class="title">Title</span>
-                                    <p>First Line <br>
-                                        Second Line
-                                    </p>
-                                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                </li>
-                                <li class="collection-item avatar">
-                                    <i class="material-icons circle green">track_changes</i>
-                                    <span class="title">Title</span>
-                                    <p>First Line <br>
-                                        Second Line
-                                    </p>
-                                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                </li>
-                                <li class="collection-item avatar">
-                                    <i class="material-icons circle red">play_arrow</i>
-                                    <span class="title">Title</span>
-                                    <p>First Line <br>
-                                        Second Line
-                                    </p>
-                                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- /. ROW  -->
-            <div class="fixed-action-btn horizontal click-to-toggle">
-                <a class="btn-floating btn-large red">
-                    <i class="material-icons">menu</i>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-fw fa-envelope"></i>
+                    <span class="d-lg-none">Messages
+              <span class="badge badge-pill badge-primary">12 New</span>
+            </span>
+                    <span class="indicator text-primary d-none d-lg-block">
+              <i class="fa fa-fw fa-circle"></i>
+            </span>
                 </a>
-                <ul>
-                    <li><a class="btn-floating red"><i class="material-icons">track_changes</i></a></li>
-                    <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-                    <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-                    <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-                </ul>
-            </div>
-
-            <footer><p>XX公司欢迎你<a href="#" target="_blank" title="公司网站">点击进入公司主页</a></p>
-
-
-            </footer>
-        </div>
-        <!-- /. PAGE INNER  -->
+                <div class="dropdown-menu" aria-labelledby="messagesDropdown">
+                    <h6 class="dropdown-header">New Messages:</h6>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <strong>David Miller</strong>
+                        <span class="small float-right text-muted">11:21 AM</span>
+                        <div class="dropdown-message small">Hey there! This new version of SB Admin is pretty awesome!
+                            These messages clip off when they reach the end of the box so they don't overflow over to
+                            the sides!
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <strong>Jane Smith</strong>
+                        <span class="small float-right text-muted">11:21 AM</span>
+                        <div class="dropdown-message small">I was wondering if you could meet for an appointment at 3:00
+                            instead of 4:00. Thanks!
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <strong>John Doe</strong>
+                        <span class="small float-right text-muted">11:21 AM</span>
+                        <div class="dropdown-message small">I've sent the final files over to you for review. When
+                            you're able to sign off of them let me know and we can discuss distribution.
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item small" href="#">View all messages</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-fw fa-bell"></i>
+                    <span class="d-lg-none">Alerts
+              <span class="badge badge-pill badge-warning">6 New</span>
+            </span>
+                    <span class="indicator text-warning d-none d-lg-block">
+              <i class="fa fa-fw fa-circle"></i>
+            </span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+                    <h6 class="dropdown-header">New Alerts:</h6>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+              <span class="text-success">
+                <strong>
+                  <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+              </span>
+                        <span class="small float-right text-muted">11:21 AM</span>
+                        <div class="dropdown-message small">This is an automated server response message. All systems
+                            are online.
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+              <span class="text-danger">
+                <strong>
+                  <i class="fa fa-long-arrow-down fa-fw"></i>Status Update</strong>
+              </span>
+                        <span class="small float-right text-muted">11:21 AM</span>
+                        <div class="dropdown-message small">This is an automated server response message. All systems
+                            are online.
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+              <span class="text-success">
+                <strong>
+                  <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+              </span>
+                        <span class="small float-right text-muted">11:21 AM</span>
+                        <div class="dropdown-message small">This is an automated server response message. All systems
+                            are online.
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item small" href="#">View all alerts</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <form class="form-inline my-2 my-lg-0 mr-lg-2">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Search for...">
+                        <span class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+                    </div>
+                </form>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+            </li>
+        </ul>
     </div>
-    <!-- /. PAGE WRAPPER  -->
+</nav>
+<div class="content-wrapper">
+    <div class="container-fluid">
+
+        <!-- Breadcrumbs-->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="#">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active">My Dashboard</li>
+        </ol>
+    </div>
+    <div class="container-fluid collapse" id="artList">
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12">
+                <!-- Example DataTables Card-->
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <i class="fa fa-list"></i>Add page
+
+                    </div>
+                    <div class="card-body">
+
+                        <div class="card-header">
+                            <i class="fa fa-tag"></i>标题
+                            <input class="nav-link-text" placeholder="输入文章标题"/>
+                            <div class="pull-right">
+                                <button class="btn btn-dark" onclick="location.href='articleAdd.jsp'"><i
+                                        class="fa fa-edit">添加文章</i></button>
+                            </div>
+                        </div>
+
+
+                        <!-- Create the editor container -->
+                        <div id="editor-container">
+                            <p>Hello World!</p>
+                            <p>Some initial <strong>bold</strong> fghjkl;dfghjkltext</p>
+                            <p><br></p>
+                        </div>
+
+                        <button class="btn-dark pull-right"/>
+                        <i class="fa fa-send">提交</i>
+
+
+                    </div>
+                    <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
 </div>
-<!-- /. WRAPPER  -->
-<!-- JS Scripts-->
-<!-- jQuery Js -->
-<script src="assets/js/jquery-1.10.2.js"></script>
+<!-- /.container-fluid-->
+<!-- /.content-wrapper-->
+<footer class="sticky-footer">
+    <div class="container">
+        <div class="text-center">
+            <small>Copyright @ by  unicorn team 2018</small>
+        </div>
+    </div>
+</footer>
 
-<!-- Bootstrap Js -->
-<script src="assets/js/bootstrap.min.js"></script>
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+    <i class="fa fa-angle-up"></i>
+</a>
+<!-- Logout Modal-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-primary" href="#">Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
 
-<script src="assets/materialize/js/materialize.min.js"></script>
 
-<!-- Metis Menu Js -->
-<script src="assets/js/jquery.metisMenu.js"></script>
-<!-- Morris Chart Js -->
-<script src="assets/js/morris/raphael-2.1.0.min.js"></script>
-<script src="assets/js/morris/morris.js"></script>
+<!-- Bootstrap core JavaScript-->
+<script src="../../../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../../../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+<!-- Core plugin JavaScript-->
+<script src="../../../assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Page level plugin JavaScript-->
+<script src="../../../assets/vendor/chart.js/Chart.min.js"></script>
+<script src="../../../assets/vendor/datatables/jquery.dataTables.js"></script>
+<script src="../../../assets/vendor/datatables/dataTables.bootstrap4.js"></script>
+<!-- Custom scripts for all pages-->
+<script src="../../../assets/js/sb-admin.min.js"></script>
+<!-- Custom scripts for this page-->
+<script src="../../../assets/js/sb-admin-datatables.min.js"></script>
+<script src="../../../assets/js/sb-admin-charts.min.js"></script>
+<!-- Toggle between fixed and static navbar-->
+<script>
+    $('#toggleNavPosition').click(function () {
+        $('body').toggleClass('fixed-nav');
+        $('nav').toggleClass('fixed-top static-top');
+    });
+
+</script>
+<!-- Toggle between dark and light navbar-->
+<script>
+    $('#toggleNavColor').click(function () {
+        $('nav').toggleClass('navbar-dark navbar-light');
+        $('nav').toggleClass('bg-dark bg-light');
+        $('body').toggleClass('bg-dark bg-light');
+    });
+
+</script>
+
+<!-- Include the Quill library -->
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+<!-- Initialize Quill editor -->
+<script>
+    var quill = new Quill('#editor-container', {
+        modules: {
+            toolbar: [
+                [{header: [1, 2, false]}],
+                ['bold', 'italic', 'underline'],
+                ['image', 'code-block']
+            ]
+        },
+        placeholder: 'Compose an epic...',
+        theme: 'snow'  // or 'bubble'
+    });
 
 
-<script src="assets/js/easypiechart.js"></script>
-<script src="assets/js/easypiechart-data.js"></script>
-
-<script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
-
-<!-- Custom Js -->
-<script src="assets/js/custom-scripts.js"></script>
-
-
+</script>
+</div>
 </body>
 
 </html>

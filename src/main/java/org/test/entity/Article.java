@@ -3,135 +3,75 @@ package org.test.entity;
 
 public class Article {
 
-    private int id;
-    private String name;
-    private String content;
-    private String keyword;
-    private String author;
-    private String source;
-    private int seq;
-    private int isTop;
-    private java.sql.Timestamp editTime;
-    private String attachPath;
-    private int clicks;
-    private String editor;
-    private int categoryId;
+  private long id;
+  private String name;
+  private String type;
+  private String content;
+  private String author;
+  private java.sql.Timestamp editTime;
+  private long isTop;
 
 
-    public int getId() {
-        return id;
-    }
+  public long getId() {
+    return id;
+  }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+  public void setId(long id) {
+    this.id = id;
+  }
 
 
-    public String getContent() {
-        return content;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-
-    public String getKeyword() {
-        return keyword;
-    }
-
-    public void setKeyword(String keyword) {
-        this.keyword = keyword;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
 
-    public String getAuthor() {
-        return author;
-    }
+  public String getType() {
+    return type;
+  }
 
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-
-    public String getSource() {
-        return source;
-    }
-
-    public void setSource(String source) {
-        this.source = source;
-    }
+  public void setType(String type) {
+    this.type = type;
+  }
 
 
-    public int getSeq() {
-        return seq;
-    }
+  public String getContent() {
+    return content;
+  }
 
-    public void setSeq(int seq) {
-        this.seq = seq;
-    }
-
-
-    public int getIsTop() {
-        return isTop;
-    }
-
-    public void setIsTop(int isTop) {
-        this.isTop = isTop;
-    }
+  public void setContent(String content) {
+    this.content = content;
+  }
 
 
-    public java.sql.Timestamp getEditTime() {
-        return editTime;
-    }
+  public String getAuthor() {
+    return author;
+  }
 
-    public void setEditTime(java.sql.Timestamp editTime) {
-        this.editTime = editTime;
-    }
-
-
-    public String getAttachPath() {
-        return attachPath;
-    }
-
-    public void setAttachPath(String attachPath) {
-        this.attachPath = attachPath;
-    }
+  public void setAuthor(String author) {
+    this.author = author;
+  }
 
 
-    public int getClicks() {
-        return clicks;
-    }
+  public java.sql.Timestamp getEditTime() {
+    return editTime;
+  }
 
-    public void setClicks(int clicks) {
-        this.clicks = clicks;
-    }
-
-
-    public String getEditor() {
-        return editor;
-    }
-
-    public void setEditor(String editor) {
-        this.editor = editor;
-    }
+  public void setEditTime(java.sql.Timestamp editTime) {
+    this.editTime = editTime;
+  }
 
 
-    public int getCategoryId() {
-        return categoryId;
-    }
+  public long getIsTop() {
+    return isTop;
+  }
 
-    public void setCategoryId(int categoryId) {
-        this.categoryId = categoryId;
-    }
+  public void setIsTop(long isTop) {
+    this.isTop = isTop;
+  }
 
 }
