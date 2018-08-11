@@ -272,6 +272,8 @@
 
                         <div id="contact-form" >
                             <form method="post" action="${pageContext.request.contextPath}/FormUpdate.do" >
+                                <span class="required">编号:</span><br>
+                                <input type="text" name="id" value="${form.id}" readonly required="required" tabindex="1" autofocus="autofocus"><br>
                                 <span class="required">命名:</span><br>
                                 <input type="text" name="name" value="${form.name}" required="required" tabindex="1" autofocus="autofocus"><br>
                                 <span class="required">发布者:</span><br>
@@ -283,14 +285,10 @@
                                     <option value="${i.name}" >${i.name}</option>
                                 </c:forEach>
                             </select>
-
                                 <br>
-
                                 <input type="submit" value="提交">
                                 <input type="reset" value="重写">
                             </form>
-
-
                             <div class="card-footer small text-muted">Updated time is <%=nowDate%></div>
                         </div>
 

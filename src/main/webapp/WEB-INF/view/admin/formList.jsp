@@ -306,7 +306,7 @@
                                         <td>
 
                                             <a class="btn btn-light" href="${pageContext.request.contextPath}/FormUpdateView.do?id=${i.id}"><i class="fa fa-file-text-o"></i></a>
-                                            <a class="btn btn-light" href=${pageContext.request.contextPath}/FormDelete.do?id=${i.id}"><i class="fa fa-trash-o"></i></a>
+                                            <a class="btn btn-light" href="${pageContext.request.contextPath}/FormDelete.do?id=${i.id}"><i class="fa fa-trash-o"></i></a>
                                             <a class="btn btn-light" href="${pageContext.request.contextPath}/elementAddView.do?id=${i.id}"><i class="fa fa-plus"></i>add element</a>
                                             <a class="btn btn-light" href="${pageContext.request.contextPath}/FormView.do?id=${i.id}"><i class="fa fa-pagelines"></i>more</a>
                                             <%--<a href="${pageContext.request.contextPath}/elementAddView.do?id=${i.id}">add form element</a>--%>
